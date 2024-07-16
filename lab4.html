@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title> <style>
+body {
+font-family: Arial, sans-serif;
+background-color: orange;
+}
+header {
+background-color:blue;
+color: black;
+padding: 15px;
+text-align: center;
+}
+nav {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+nav a {
+color: greenyellow;
+margin: 10px;
+
+}
+section {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 10px;
+}
+section div {
+background-color:lightpink;
+border-radius: 10px;
+box-shadow: 0 2px 4px;
+margin: 5px;
+padding: 10px;
+width: 40%;
+min-width: 200px;
+text-align: center;
+transition: transform 0.3s ease;
+}
+section div:hover {
+transform: translateY(-5px);
+}
+h2 {
+color:goldenrod;
+margin-bottom: 10px;
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+li {
+margin-bottom: 5px;
+}
+footer {
+background-color: white;
+color: red;
+text-align: center;
+padding: 15px;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+section div:nth-child(odd) {
+animation: fadeIn 1s ease-out;
+}
+</style>
+</head>
+
+<body>
+<header>
+<h1>About Me</h1>
+<nav>
+<link rel="stylesheet" href="styles.css">
+</nav>
+</header>
+<section id="about">
+<div>
+<h2>I'm khushi...</h2>
+<p>Nowadays, I'm pursuing my computer Programming diploma at HUMBER 
+COLLEGE(Canada).</p>
+<p>I want to build a career in IT field.</p>
+<p>Basically, I'm from India.</p>
+</div>
+<div>
+<h2>Hobbies</h2>
+<ul>
+<li>Cycling</li>
+<li>Music</li>
+<li>Gaming</li>
+<li>To read books in my free time</li>
+</ul>
+</div>
+<div>
+
+<h2>Skills</h2>
+<ul>
+<li>Multilingual</li>
+<li>Editing</li>
+<li>HTML</li>
+</ul>
+</div>
+<footer>These are some few qualities in me</footer>
+</section>
+</body>
+</html>
